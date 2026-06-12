@@ -7,7 +7,7 @@ import json
 
 SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
 
-TOKEN_FILE = "token_voice_report.json"
+#TOKEN_FILE = "token_voice_report.json"
 
 
 def send_email(recipient_email, manager_email, subject, body):
