@@ -30,6 +30,7 @@ After the report is generated, the system:
 This creates a complete reporting workflow while keeping the user interaction minimal.
 
 The user only needs to record the update, review the transcript, and submit the report.
+
 ---
 ### What the Application Does
 The application takes a voice note as input and performs the following tasks:
@@ -87,5 +88,6 @@ Pushing this product to the production environment could include additional feat
 * Integration with enterprise reporting tools
 
 The current implementation focuses on the core workflow. The project was intentionally designed so that additional business-specific fields, reporting requirements, and integrations can be added with minimal changes to the overall architecture.
+
 ---
-### Note: This is a personal portfolio project built for learning and demonstration purposes. The workflows, examples, and sample data used in the project are fictional and do not represent any employer, client, or proprietary business process.
+### Note: This is a personal portfolio project built for learning and demonstration purposes. The workflows, examples, and sample data used in the project do not represent any employer, client, or proprietary business process.
