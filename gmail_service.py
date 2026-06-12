@@ -2,6 +2,8 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from email.mime.text import MIMEText
 import base64
+import streamlit as st
+import json
 
 SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
 
@@ -10,8 +12,10 @@ TOKEN_FILE = "token_voice_report.json"
 
 def send_email(recipient_email, manager_email, subject, body):
 
-    creds = Credentials.from_authorized_user_file(
-        TOKEN_FILE,
+    token_info = json.loads(st.secrets["GMAIL_TOKEN_JSON"])
+
+    creds = Credentials.from_authorized_user_info(
+        token_info,
         SCOPES
     )
 
