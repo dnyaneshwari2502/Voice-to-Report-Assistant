@@ -208,9 +208,8 @@ st.sidebar.markdown("## Connect With Me")
 st.sidebar.markdown(
     "[LinkedIn](https://www.linkedin.com/in/dnyaneshwari-rakshe1325)"
 )
-
 st.sidebar.markdown(
-    "📧 dnyaneshwarirakshe133@gmail.com"
+    "dnyaneshwarirakshe133@gmail.com"
 )
 
 st.sidebar.info(
