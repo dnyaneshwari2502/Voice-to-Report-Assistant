@@ -2,8 +2,11 @@ import whisper
 import tempfile
 import streamlit as st
 import google.generativeai as genai
+import imageio_ffmpeg
 import os
 import re
+
+os.environ["PATH"] += os.pathsep + os.path.dirname(imageio_ffmpeg.get_ffmpeg_exe())
 
 from gmail_service import send_email
 from dotenv import load_dotenv
