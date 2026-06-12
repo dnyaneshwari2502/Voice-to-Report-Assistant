@@ -155,10 +155,12 @@ if "summary" in st.session_state:
             extract_section(st.session_state["summary"], "Next Steps")
         )
 
-        st.success("Report sent successfully!")
 
         st.session_state.pop("transcript", None)
         st.session_state.pop("summary", None)
+
+        st.success("Report sent successfully!")
+
 
 #History Section
 
@@ -197,3 +199,24 @@ if st.session_state["show_history"]:
         })
 
     st.dataframe(history_data, use_container_width=True)
+
+
+#connect with me section
+
+st.sidebar.markdown("## Connect With Me")
+
+st.sidebar.markdown(
+    "[LinkedIn](https://www.linkedin.com/in/dnyaneshwari-rakshe1325)"
+)
+
+st.sidebar.markdown(
+    "📧 dnyaneshwarirakshe133@gmail.com"
+)
+
+st.sidebar.info(
+    """
+    Email functionality in this demo is currently configured using my personal Gmail API credentials.
+
+    If you are interested in using, extending, or integrating this project for your own workflow or organization, please feel free to reach out.
+    """
+)

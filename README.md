@@ -4,6 +4,8 @@
 
 While thinking about practical uses of AI in day-to-day operations, I noticed that many field workers and technicians spend time typing updates after completing their work. In many cases, the actual update takes less than a minute to explain verbally but several minutes to write and format into an email. The idea behind this project was to make reporting faster and more natural. Instead of typing updates, a user can simply record a voice message. The application converts the speech into text, allows the user to review and edit the transcript, generates a structured report, and sends it directly by email.
 
+App Link: https://voice-to-report-assistant-dsr.streamlit.app/
+
 ---
 ### My Approach
 While designing this project, I intentionally kept a human review step in the workflow instead of making the system fully autonomous. This is because speech recognition is not always perfect, so the user is given an opportunity to review and correct the transcript before any email is generated or sent.
@@ -32,6 +34,17 @@ This creates a complete reporting workflow while keeping the user interaction mi
 The user only needs to record the update, review the transcript, and submit the report.
 
 ---
+
+#### Deployment Note
+
+The current deployment uses Gmail API with a personal Google account for demonstration purposes.
+
+Because Gmail OAuth permissions are configured only for the project owner's account, email delivery is currently limited to the authorized Gmail account used during development.
+
+If you are interested in using or extending this project, please feel free to connect with me. I would be happy to discuss how the email workflow can be configured for additional users, teams, or organizational environments.
+
+---
+
 ### What the Application Does
 The application takes a voice note as input and performs the following tasks:
 1. Records a voice update directly in the browser
@@ -91,3 +104,5 @@ The current implementation focuses on the core workflow. The project was intenti
 
 ---
 ### Note: This is a personal portfolio project built for learning and demonstration purposes. The workflows, examples, and sample data used in the project do not represent any employer, client, or proprietary business process.
+
+If you have ideas for improving this project, or would like to integrate it into a reporting workflow, or collaborate on future enhancements, I would be happy to connect and discuss further!
