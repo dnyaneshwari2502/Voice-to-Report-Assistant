@@ -1,0 +1,5 @@
+venv/
+.env
+token_voice_report.json
+__pycache__/
+credentials.json
