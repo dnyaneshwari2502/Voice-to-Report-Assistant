@@ -203,19 +203,19 @@ if st.session_state["show_history"]:
 
 #connect with me section
 
-st.sidebar.markdown("## Connect With Me")
+# st.sidebar.markdown("## Connect With Me")
 
-st.sidebar.markdown(
-    "[LinkedIn](https://www.linkedin.com/in/dnyaneshwari-rakshe1325)"
-)
-st.sidebar.markdown(
-    "dnyaneshwarirakshe133@gmail.com"
-)
+# st.sidebar.markdown(
+#     "[LinkedIn](https://www.linkedin.com/in/dnyaneshwari-rakshe1325)"
+# )
+# st.sidebar.markdown(
+#     "dnyaneshwarirakshe133@gmail.com"
+# )
 
-st.sidebar.info(
-    """
-    Email functionality in this demo is currently configured using my personal Gmail API credentials.
+# st.sidebar.info(
+#     """
+#     Email functionality in this demo is currently configured using my personal Gmail API credentials.
 
-    If you are interested in using, extending, or integrating this project for your own workflow or organization, please feel free to reach out.
-    """
-)
+#     If you are interested in using, extending, or integrating this project for your own workflow or organization, please feel free to reach out.
+#     """
+# )
